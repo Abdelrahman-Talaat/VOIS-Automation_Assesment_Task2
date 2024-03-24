@@ -1,15 +1,13 @@
 package Tests;
 
-import Pages.PaymentDetailsPage;
 import Pages.SelectSeatPage;
 import Pages.ksrtcHomePage;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class BookSeatTest extends BaseTest {
     ksrtcHomePage ksrtcHomePage;
     SelectSeatPage selectSeatPage;
-    PaymentDetailsPage paymentDetailsPage;
+
     String customerMobileNo;
     String customerEmail;
     String passengerName;
@@ -34,7 +32,5 @@ public class BookSeatTest extends BaseTest {
       selectSeatPage.selectSeat();
       selectSeatPage.enterPassengerDetails(passengerName,passengerAge);
       selectSeatPage.CheckAgreementsBox();
-      paymentDetailsPage =selectSeatPage.clickMakePaymentBtn();
-      paymentDetailsPage.fillPaymentData("6789125987","123456789012");
-    }
+      selectSeatPage.clickMakePaymentBtn();    }
 }
