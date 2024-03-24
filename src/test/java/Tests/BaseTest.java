@@ -24,7 +24,7 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void recordFailureTest(ITestResult result) {
+    public void tearDown(ITestResult result){
         if (ITestResult.FAILURE == result.getStatus()) {
             var camera = (TakesScreenshot) driver;
             File screenshot = camera.getScreenshotAs(OutputType.FILE);
@@ -35,4 +35,10 @@ public class BaseTest {
             }
         }
 
-    }}
+        if (driver != null){
+            driver.quit();
+        }
+    }
+
+
+}

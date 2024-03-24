@@ -12,13 +12,8 @@ public class IExecutionListener implements org.testng.IExecutionListener {
 
     @Override
     public void onExecutionFinish() {
-        try {
-      Runtime.getRuntime().exec("generateAllureReport.bat");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        long endTime=System.currentTimeMillis();
-        System.out.println("inform that all the suit have finished execution at :"+endTime);
-
+        System.out.println("Test Finished");
+        long finishTime=System.currentTimeMillis();
+        System.out.println("inform that all the suit have finished execution at :"+finishTime);
     }
 }

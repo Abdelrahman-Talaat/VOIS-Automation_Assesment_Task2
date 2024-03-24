@@ -65,7 +65,8 @@ public class SelectSeatPage {
         driver.findElement(checkAgreementsBox).click();
     }
     @Step("click on make payment button")
-    public void clickMakePaymentBtn(){
+    public PaymentDetailsPage clickMakePaymentBtn(){
         driver.findElement(makePaymentBtn).click();
+        return new PaymentDetailsPage(driver);
     }
 }
