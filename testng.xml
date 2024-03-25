@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listeners.TestNGListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="E:/testing/java/projects/Vois_Automation_Assesment_Task2">
+        <classes><class name="Tests.BookSeatTest"><methods>
+            <include name="bookSeat"/>
+        </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
