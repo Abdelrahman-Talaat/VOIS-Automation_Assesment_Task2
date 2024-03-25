@@ -15,7 +15,7 @@ This project includes automated test scripts for the below VOIS assesment task:
 -	Click on “make payment” and fill all the fields without submitting the payment
 
 ## Features:
--	Allure Report.
+-	Allure Report generated automatically after finishing test.
 -	DataDriven.
 -	Screenshot in case of faliure.
 
